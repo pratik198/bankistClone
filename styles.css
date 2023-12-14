@@ -8,14 +8,12 @@ body{
 }
 
 .main_header{
-    /* background-color: red; */
     height: 70px;
     display: flex;
     justify-content: space-around;
     gap: 125px;
 }
 .logo_png{
-    /* background-color: blue; */
     width: 197px;
     display: flex;
     justify-content: center;
@@ -36,8 +34,7 @@ body{
 }
 .right-side-header a {
     text-decoration: none;
-    /* text-transform: none; */
-    color: black;
+    color: #444;
     font-size: larger;
     cursor: pointer;
 }
@@ -52,4 +49,29 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.banking-meets{
+    /* background-color: red; */
+    height: 37em;
+    width: 86%;
+    position: absolute;
+    left: 7%;
+    display: flex;
+}
+
+.banking-meets h1{
+    position: relative;
+    top: 13%;
+    left: 2%;
+    font-size: 59px;
+    line-height: 1.35;
+    font-family: "Poppins", sans-serif;
+    color: #444;
+}
+
+.banking-meets img{
+    height: 64%;
+    position: relative;
+    top: 4%;
+    left: 9%;
 }
