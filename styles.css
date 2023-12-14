@@ -1,4 +1,55 @@
-.main_page{
-    background-color: blue;
-    height: 800px;
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #f3f3f3
+}
+
+.main_header{
+    /* background-color: red; */
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    gap: 125px;
+}
+.logo_png{
+    /* background-color: blue; */
+    width: 197px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.logo_png img {
+    height: 45px;
+    opacity: 1;
+}
+.right-side-header{
+    width: 61%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+.right-side-header a {
+    text-decoration: none;
+    /* text-transform: none; */
+    color: black;
+    font-size: larger;
+    cursor: pointer;
+}
+
+.right_side:nth-child(4){
+    padding: 0.8rem 2.5rem;
+    border-radius: 3rem;
+    background-color: #5ec576;
+    color: #222;
+    text-align: center;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
