@@ -51,7 +51,6 @@ body{
     align-items: center;
 }
 .banking-meets{
-    /* background-color: red; */
     height: 37em;
     width: 86%;
     position: absolute;
@@ -63,7 +62,7 @@ body{
     position: relative;
     top: 13%;
     left: 2%;
-    font-size: 59px;
+    font-size: 55px;
     line-height: 1.35;
     font-family: "Poppins", sans-serif;
     color: #444;
@@ -74,4 +73,13 @@ body{
     position: relative;
     top: 4%;
     left: 9%;
+}
+.banking-meets h3 {
+    height: 47px;
+    position: absolute;
+    top: 41%;
+    left: 22px;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #444;
 }
