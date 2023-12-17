@@ -13,21 +13,23 @@
         <div class="logo_png">
           <img src="./assets/logo.png" alt=".." />
         </div>
-        <div class="right-side-header">
-          <div class="right_side">
+        <div class="nav_links">
+          <div class="nav_item">
             <a href="#">Features</a>
           </div>
-          <div class="right_side">
+          <div class="nav_item">
             <a href="#">Operations</a>
           </div>
-          <div class="right_side">
+          <div class="nav_item">
             <a href="#">Testimonials</a>
           </div>
-          <div class="right_side">
+          <div class="nav_item" id="btn_show_modal">
             <a href="#">Open account</a>
           </div>
         </div>
       </div>
+
+
 
       <div class="banking-meets">
         <h1>
@@ -41,6 +43,8 @@
       
     </div>
 
+
+    <!-- FEATURES PAGE //PG-2 -->
     <div class="second-page">
       
       <div class="feature_heading">
@@ -78,6 +82,7 @@
 
     </div>
 
+    <!-- OPERATIONS PAGE //3-->
     <div class="third_page">
 
       <div class="feature_heading">
@@ -100,6 +105,26 @@
 
     </div>
 
-    <script src="/script.js"></script>
+
+    <!-- MODAL WINDOW -->
+    <div class="modal" id="modal_window">
+      <span class="modal_close_btn" id="modal_close_btn">&times;</span>
+      <h1>
+        Open your bank account in just <span class="highlight">5 minutes</span>
+      </h1>
+      <form class="modal_form">
+        <label>First Name</label>
+        <input type="text" />
+        <label>Last Name</label>
+        <input type="text" />
+        <label>E-mail Address</label>
+        <input type="text" />
+      </form>
+      <button class="btn_nextStep">Next Step &rarr;</button>
+    </div>
+    <div class="modal_background"></div>
+    
+    <script src="sc.js"></script>
   </body>
 </html>
+

@@ -34,14 +34,14 @@ body{
   height: 45px;
   opacity: 1;
 }
-.right-side-header{
+.nav_links{
   width: 45%;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 60px;
 }
-.right-side-header a {
+.nav_links a {
   text-decoration: none;
   color: #444;
   font-size: larger;
@@ -49,7 +49,7 @@ body{
   font-family: "Poppins", sans-serif;
 }
 
-.right_side:nth-child(4){
+.nav_item:nth-child(4){
   padding: 0.7rem 1.8rem;
   border-radius: 3rem;
   background-color: #5ec576;
@@ -82,22 +82,6 @@ body{
   font-family: "Poppins", sans-serif;
   color: #444;
 }
-
-/* .banking-meets span::after {
-  display: block;
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: -1;
-  opacity: 0.7;
-  transform: scale(1.07, 1.05) skewX(-15deg);
- 
-  background-image: linear-gradient(144deg, #B0E38B, #73C7A5);
-  transform: scale(1.07, 1.05) skewX(-15deg);
-} */
 
 .highlight {
   position: relative;
@@ -224,10 +208,7 @@ body{
   font-size: 1.1rem;
   border: none;
   background-color: #ffbb00;
-  /* padding: 10px; */
-  /* border-radius: 21px; */
   border-radius: 5rem;
-  /* font-family: inherit; */
   font-weight: 500;
   padding: 1.25rem 2.5rem;
   display: flex;
@@ -244,3 +225,73 @@ body{
 .btns:nth-child(3){
   background-color: #FF585F;
 }
+
+
+
+/* MODAL WINDOW*/
+.modal{
+  display: none;
+  height: 27rem;
+  max-width: 30rem;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 5rem 6rem;
+  color: #444;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  background-color: #f3f3f3;
+  z-index: 1000;
+  transition: all 5s;
+}
+
+.modal h1{
+  position: relative;
+  top: -11%;
+  font-size: 36px;
+  line-height: 1.5;
+}
+
+.modal_close_btn{
+  font-size: 2.3rem;
+  font-weight: 500;
+  position: absolute;
+  right: 1.5rem;
+  top: 0.5rem;
+  cursor: pointer;
+}
+
+.modal_form{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 50px 0;
+  padding: 14px;
+  align-items: center;
+  width: 109%;
+  position: relative;
+  right: 2em;
+}
+
+.modal_form label{
+  font-size: 19px;
+}
+
+.modal_form input{
+  font-size: 30px;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+}
+
+.btn_nextStep{
+  position: relative;
+  height: 10%;
+  width: 40%;
+  top: 9%;
+  left: 33%;
+  font-size: 19px;
+  border: none;
+  border-radius: 30px;
+  background-color: #5EC576;
+}
+
