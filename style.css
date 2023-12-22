@@ -1,30 +1,30 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
-body{
-  background-color: #f3f3f3
+body {
+  background-color: #f3f3f3;
 }
 
-body .active{
+body .active {
   filter: blur(4px);
 }
-.whole_page{
+.whole_page {
   height: 100vh;
   padding: 0em 3em;
   display: flex;
   flex-direction: column;
 }
 
-.main_header{
+.main_header {
   height: 70px;
   display: flex;
   justify-content: space-around;
   gap: 305px;
-  box-shadow: 3px 1px 6px #607D8B;
+  box-shadow: 3px 1px 6px #607d8b;
 }
-.logo_png{
+.logo_png {
   /* background-color: green; */
   width: 197px;
   display: flex;
@@ -37,7 +37,7 @@ body .active{
   height: 45px;
   opacity: 1;
 }
-.nav_links{
+.nav_links {
   width: 45%;
   display: flex;
   justify-content: center;
@@ -52,7 +52,7 @@ body .active{
   font-family: "Poppins", sans-serif;
 }
 
-.nav_item:nth-child(4){
+.nav_item:nth-child(4) {
   padding: 0.7rem 1.8rem;
   border-radius: 3rem;
   background-color: #5ec576;
@@ -63,7 +63,7 @@ body .active{
   justify-content: center;
   align-items: center;
 }
-.banking-meets{
+.banking-meets {
   height: 35em;
   width: 86%;
   position: absolute;
@@ -76,7 +76,7 @@ body .active{
   align-items: flex-start;
 }
 
-.banking-meets h1{
+.banking-meets h1 {
   position: relative;
   top: 13%;
   left: 2%;
@@ -92,7 +92,7 @@ body .active{
 
 .highlight::after {
   display: block;
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -101,11 +101,10 @@ body .active{
   z-index: -1;
   opacity: 0.7;
   transform: scale(1.07, 1.05) skewX(-15deg);
-  background-image: linear-gradient(144deg, #B0E38B, #73C7A5);
+  background-image: linear-gradient(144deg, #b0e38b, #73c7a5);
 }
 
-
-.banking-meets img{
+.banking-meets img {
   height: 64%;
   position: relative;
   top: 4%;
@@ -121,22 +120,22 @@ body .active{
   color: #444;
   font-family: "Poppins", sans-serif;
 }
-.learn-more{
+.learn-more {
   height: 32px;
   position: absolute;
   top: 21em;
   left: 4%;
   border: none;
-  border-bottom: 2px solid #8FD499;
-  color: #8FD499;
+  border-bottom: 2px solid #8fd499;
+  color: #8fd499;
   font-size: 17px;
 }
-.second-page{
+.second-page {
   padding: 10rem 3rem;
   border-top: 2px solid #ddd;
   height: 82rem;
 }
-.feature_heading{
+.feature_heading {
   width: 56%;
   font-size: 30px;
   margin: 0 21rem 5rem 21rem;
@@ -144,18 +143,18 @@ body .active{
   flex-direction: column;
   gap: 1rem;
 }
-.feature_heading h4{
-  color: #8FD499;
+.feature_heading h4 {
+  color: #8fd499;
   font-family: "Poppins", sans-serif;
   font-size: 24px;
 }
-.feature_heading h2{
+.feature_heading h2 {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
-  color: #444444
+  color: #444444;
 }
 
-.features{
+.features {
   /* background-color: red; */
   height: 100vh;
   width: 80%;
@@ -170,7 +169,7 @@ body .active{
   height: 330px;
 }
 
-.features .featuresDiv{
+.features .featuresDiv {
   height: 171px;
   width: 73%;
   /* background-color: green; */
@@ -183,34 +182,38 @@ body .active{
   color: #444444;
 }
 
-.featuresDiv h3{
+.featuresDiv h3 {
   font-size: 26px;
 }
 
-.third_page{
+.third_page {
   padding: 10rem 3rem;
   border-top: 2px solid #ddd;
 }
 
-.operation_modalBox{
-  background-color: red;
-  height: 20rem;
-  width: 80%;
+.operation_modalBox {
+  background-color: white;
+  width: 69%;
   position: relative;
-  left: 9rem;
+  left: 16%;
+  height: 290px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #444444;
 }
 
-.btns_div{
-  height: 4rem;
+.btns_div {
+  height: 3em;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 2.25rem;
 }
 
-.btns{
+.btns {
   height: 45px;
   font-size: 1.1rem;
   border: none;
-  background-color: #ffbb00;
+  background-color: #ffcb03;
   border-radius: 5rem;
   font-weight: 500;
   padding: 1.25rem 2.5rem;
@@ -222,17 +225,100 @@ body .active{
   bottom: 1em;
 }
 
-.btns:nth-child(2){
-  background-color: #5EC576;
+.btns:nth-child(2) {
+  background-color: #5ec576;
 }
-.btns:nth-child(3){
-  background-color: #FF585F;
+.btns:nth-child(3) {
+  background-color: #ff585f;
 }
 
+.modalbox {
+  display: grid;
+  grid-template-columns: 4.2em 2fr;
+  row-gap: 6px;
+  column-gap: 30px;
+  padding: 2em 6rem;
+}
+.modal_content_png {
+  height: 68px;
+}
+.modal_content_png img {
+  height: 100%;
+}
+.modal_content_heading h2{
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.modal_content {
+  font-size: 19px;
+  padding: 20px 20px 20px 0;
+  text-align: justify;
+}
+.modalbox_content_1 {
+  visibility: visible;
+}
+.modalbox_content_2 {
+  position: relative;
+  bottom: 245px;
+  visibility: hidden;
+}
+.modalbox_content_3 {
+  position: relative;
+  bottom: 490px;
+  visibility: hidden;
+}
 
+/* TESTIMONIALS PAGE #4TH-PAGE */
+.testimonials_page{
+  padding: 10rem 3rem;
+  border-top: 2px solid #ddd;
+}
+
+.slider{
+  background-color: red;
+  height: 71vh;
+  position: relative;
+  max-width: 64vw;
+  left: 17%;
+  bottom: 49px;
+  display: flex;
+  justify-content: center;
+}
+
+.slides{
+  background-color: green;
+  height: 100%;
+  /* position: relative; */
+  width: 60%;
+  left: 19%;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.testimonial_div{
+  background-color: #ff585f;
+  height: 60%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.testimonial_person{
+  display: grid;
+  grid-template-columns: 75px 2fr;
+}
+
+.testimonial_person img{
+  height: 100%;
+    width: 100%;
+    border: none;
+    border-radius: 50%;
+}
 
 /* MODAL WINDOW*/
-.modal{
+.modal {
   display: none;
   height: 27rem;
   max-width: 30rem;
@@ -242,21 +328,20 @@ body .active{
   transform: translate(-50%, -50%);
   padding: 5rem 6rem;
   color: #444;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   background-color: #f3f3f3;
   z-index: 1000;
-  
 }
 
-.modal h1{
+.modal h1 {
   position: relative;
   top: -11%;
   font-size: 36px;
   line-height: 1.5;
 }
 
-.modal_close_btn{
+.modal_close_btn {
   font-size: 2.3rem;
   font-weight: 500;
   position: absolute;
@@ -265,7 +350,7 @@ body .active{
   cursor: pointer;
 }
 
-.modal_form{
+.modal_form {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 50px 0;
@@ -276,17 +361,17 @@ body .active{
   right: 2em;
 }
 
-.modal_form label{
+.modal_form label {
   font-size: 19px;
 }
 
-.modal_form input{
+.modal_form input {
   font-size: 30px;
   border: 1px solid #ddd;
   border-radius: 0.5rem;
 }
 
-.btn_nextStep{
+.btn_nextStep {
   position: relative;
   height: 10%;
   width: 40%;
@@ -295,19 +380,18 @@ body .active{
   font-size: 19px;
   border: none;
   border-radius: 30px;
-  background-color: #5EC576;
+  background-color: #5ec576;
 }
 
-.modal_background {  
-  display: none;      
+.modal_background {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); 
-   backdrop-filter: blur(4px); 
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
   z-index: 100;
   transition: all 0.5s;
 }
-
