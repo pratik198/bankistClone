@@ -362,6 +362,11 @@ body .active {
   transform: translate(0, -50%);
 }
 
+.slider_btn{
+  position: absolute;
+    font-size: 44px;
+}
+
 /* MODAL WINDOW*/
 .modal {
   display: none;
