@@ -310,11 +310,38 @@ body .active {
   grid-template-columns: 75px 2fr;
 }
 
-.testimonial_person img{
-  height: 100%;
-    width: 100%;
-    border: none;
-    border-radius: 50%;
+.testimonial_person_img_div{
+  grid-row: 1/span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.testimonial_person_img_div img{
+  height: 84%;
+  width: 84%;
+  border: none;
+  border-radius: 50%;
+}
+
+.testimonial_person_name_div{
+  position: relative;
+}
+.testimonial_person_name_div h6{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-size: 18px;
+}
+.testimonial_person_location{
+  position: relative;
+}
+
+.testimonial_person_location p{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
 }
 
 /* MODAL WINDOW*/
