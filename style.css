@@ -276,7 +276,7 @@ body .active {
 }
 
 .slider{
-  background-color: red;
+  /* background-color: red; */
   height: 71vh;
   position: relative;
   max-width: 64vw;
@@ -284,10 +284,11 @@ body .active {
   bottom: 49px;
   display: flex;
   justify-content: center;
+  font-family: "Poppins", sans-serif;
 }
 
 .slides{
-  background-color: green;
+  /* background-color: green; */
   height: 100%;
   /* position: relative; */
   width: 60%;
@@ -298,16 +299,33 @@ body .active {
 }
 
 .testimonial_div{
-  background-color: #ff585f;
+  /* background-color: #ff585f; */
   height: 60%;
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 31px;
 }
+/* .slider ::before {
+  content: "\201C";
+} */
+
+.testimonial_div h5{
+  font-size: 27px;
+  font-weight: 500;
+}
+.testimonial_div p{
+  line-height: 1.6;
+    font-size: 18px;
+}
+
 .testimonial_person{
   display: grid;
   grid-template-columns: 75px 2fr;
+  width: 94%;
+  position: relative;
+  left: 6%;
+  column-gap: 12px;
 }
 
 .testimonial_person_img_div{
@@ -329,7 +347,7 @@ body .active {
 .testimonial_person_name_div h6{
   margin: 0;
   position: absolute;
-  top: 50%;
+  top: 55%;
   transform: translate(0, -50%);
   font-size: 18px;
 }
