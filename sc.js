@@ -5,18 +5,6 @@ const closeModalBtn = document.getElementById("modal_close_btn");
 
 
 
-// const modalPopUp =function() {
-//   modal.style.backgroundColor = rgba(0, 0, 0, 0.5); 
-//   modal.style.backdropFilter = blur('4px');
-
-
-// }
-// const modalCLose = function (){
-//   modal.classList.add('.hidden')
-//   modalBackground.classList.add('.hidden')
-// }
-
-
 function modalPopUp() {
   if (modal.style.display === "none") {
     modal.style.display = "block";
