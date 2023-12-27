@@ -1,44 +1,49 @@
+//MODAL-OPEN-ACCOUNT WINDOW
 const modal = document.getElementById("modal_window");
-const modalBackground = document.querySelector(".modal_background")
+const modalBackground = document.querySelector(".modal_background");
 const openModalBtn = document.getElementById("btn_show_modal");
 const closeModalBtn = document.getElementById("modal_close_btn");
-
-
 
 function modalPopUp() {
   if (modal.style.display === "none") {
     modal.style.display = "block";
-    modalBackground.style.display = "block"
-    
-    //   backgroundImage.style.opacity = "0.5";
-  } else {
-    modal.style.display = "none";
-    modalBackground.style.display = "none"
-    modal.style.transition = "all 5s";
-    //   backgroundImage.style.opacity = "1";
-  }
+    modalBackground.style.display = "block";
+  } 
 }
 
- openModalBtn.addEventListener("click", modalPopUp);
- closeModalBtn.addEventListener('click', modalPopUp);
+openModalBtn.addEventListener("click", modalPopUp);
+closeModalBtn.addEventListener("click", modalPopUp);
 
+window.addEventListener('click', function(e){
+  if(e.target === modal){
+    modal.style.display = "none";
+  }
+})
 
+//OPERATION-PAGE MODAL
+const operation_modal_btn = document.querySelectorAll(".btns");
+const modalbox = document.querySelectorAll(".modalbox");
 
-// /*
-// openModalBtn.addEventListener('click', function(){
-//     modal.style.display = "block";
-// })
+operation_modal_btn.forEach((index) => {
 
-// closeModalBtn.addEventListener('click', function(){
-//     modal.style.display = "none";
-// }) 
-// */
+})
 
-// window.addEventListener('click', function(e) {
-//     if (e.target === modal) {
-//         modal.style.display = 'none';
-//     }
-// })
+//testimonial
+let currentIndex = 0;
+const slides = document.querySelectorAll(".testimonial_div");
 
+const totalSlides = slides.length
+function showslide(index) {
+  const slideContainer = document.querySelector(".slides")
+  const newSlide = -index*100+"%";
+  slideContainer.style.transform = 'translateX('+ newSlide+ ')';
+}
 
-
+function nextSlide(){
+  currentIndex = (currentIndex + 1) % totalSlides;
+  showslide(currentIndex);
+}
+function prevSlide (){
+  currentIndex = (currentIndex - 1 +totalSlides) % totalSlides;
+  showslide(currentIndex);
+}

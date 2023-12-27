@@ -297,7 +297,8 @@ body .active {
   display: flex;
   flex: 0 0 100%;
   /* justify-content: center; */
-  align-items: center;
+  align-items: center;  
+ transition: transform 0.5s ease-in-out;
 }
 
 .testimonial_div {
@@ -367,6 +368,11 @@ body .active {
 .slider_btn {
   position: absolute;
   font-size: 44px;
+}
+
+.slider_btn_right{
+  position: relative;
+    left: 90%;
 }
 
 /* SIGN-UP SECTION */
