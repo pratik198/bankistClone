@@ -30,7 +30,7 @@ operation_modal_btn.forEach((index) => {
 
 //testimonial
 let currentIndex = 0;
-const slides = document.querySelectorAll(".testimonial_div");
+const slides = document.querySelectorAll(".test");
 
 const totalSlides = slides.length
 function showslide(index) {
