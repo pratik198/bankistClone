@@ -305,6 +305,10 @@ body .active {
   align-items: center;
 }
 
+.test_visible{
+  visibility: visible;
+}
+
 /* .test_1{
   /* background-color: green; 
 }
